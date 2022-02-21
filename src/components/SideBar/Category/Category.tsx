@@ -10,6 +10,11 @@ const Category = () => {
   useEffect(() => {
     fetch('https://fakestoreapi.com/products/categories')
       .then((res) => res.json())
+      .then((json) => {
+        json.unshift('all');
+        return json;
+      })
+      .then((items) => items.map((item: string) => item[0].toUpperCase() + item.slice(1)))
       .then(
         (result) => {
           setIsLoaded(true);
@@ -35,7 +40,7 @@ const Category = () => {
     return (
       <>
         <div className={css.category}>
-          <div className={css.header}>Category</div>
+          <div className={css.header}>Categories</div>
           <ul className={css.list}>{categoryElements}</ul>
         </div>
       </>
