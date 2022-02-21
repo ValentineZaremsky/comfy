@@ -1,0 +1,46 @@
+@import ../../styles/colors
+
+.footer
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  font-size: 22px
+  font-weight: 500
+  width: 100%
+  height: 108px
+  background-color: $color-back-dark
+  color: $color-text-bright
+
+.container
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  max-width: 1300px
+  width: 100%
+  margin-left: auto
+  margin-right: auto
+  padding: 24px
+
+.logo
+  font-family: 'Kaushan Script', cursive
+  font-size: 40px
+  font-weight: 500
+
+.copysign
+  font-size: 1.2em
+  margin-left: 4px
+
+%wrapper
+  display: flex
+  flex-direction: row
+  align-items: baseline
+
+.copyright
+  @extend %wrapper
+  gap: 8px
+
+.contacts
+  @extend %wrapper
+  gap: 48px

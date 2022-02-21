@@ -1,0 +1,63 @@
+@import ../../styles/colors
+
+$font-brand: 'Kaushan Script', cursive
+
+.home
+  flex-grow: 1
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: flex-start
+  box-sizing: border-box
+  max-width: 1300px
+  width: 100%
+  margin-left: auto
+  margin-right: auto
+  margin-bottom: 32px
+
+.welcome
+  background-blend-mode: multiply
+  background-image: url(../../assets/hero.jpeg)
+  background-position: center bottom
+  background-repeat: no-repeat
+  background-size: cover
+  height: max-content
+  width: 100%
+  color: $color-text-bright
+  background-color: rgba(0, 0, 0, 0.5)
+
+  & a
+    text-decoration: none
+    color: $color-text-bright
+
+  & .link
+    margin: 52px 0
+
+    & .button
+      display: inline-block
+      font-size: 20px
+      font-weight: 500
+      text-transform: uppercase
+      padding: 7px 16px 10px 16px
+      border-radius: 6px
+      border: 1px solid $color-text-bright
+
+.container
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: center
+  box-sizing: border-box
+  max-width: 1300px
+  width: 100%
+  padding: 24px
+  margin: 12% auto
+
+.motto
+  font-family: $font-brand
+  font-size: 106px
+  font-weight: 500
+
+.caption
+  font-size: 50px
+  font-weight: 500

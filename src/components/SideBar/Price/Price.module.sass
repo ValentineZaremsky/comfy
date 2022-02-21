@@ -1,0 +1,64 @@
+@import ../../../styles/colors
+
+.price
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: flex-start
+  margin-bottom: 24px
+  width: 100%
+
+.header
+  font-size: 20px
+  font-weight: 500
+  width: 100%
+  color: $color-text-dark
+
+.value
+  font-size: 20px
+  color: $color-text-main
+
+input[type='range']
+  width: 100%
+  height: 28px
+  margin: 0
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  outline: none
+  overflow: hidden
+
+  &:active,
+  &:focus
+    outline: none
+
+  &::-webkit-slider-runnable-track
+    border-radius: 10px/100%
+    height: 7px
+    border: 1px solid $color-back-light-border
+    // background-color: $color-back-mid
+    background-color: $color-back-light
+
+  &::-webkit-slider-thumb
+    cursor: pointer
+    margin-top: -7px
+    width: 18px
+    height: 18px
+    background: $color-back-dark
+    border-radius: 20px/100%
+    border: 1px solid $color-text-dark
+    -webkit-appearance: none
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #111111
+
+  &::-moz-range-track
+    border-radius: 10px/100%
+    height: 5px
+    border: 1px solid $color-back-light-border
+    // background-color: $color-back-mid
+    background-color: $color-back-light
+
+  &::-moz-range-thumb
+    background: $color-back-dark
+    border: 1px solid $color-text-dark
+    border-radius: 20px/100%
+    cursor: pointer

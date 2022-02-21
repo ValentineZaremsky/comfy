@@ -1,0 +1,33 @@
+@import ../../../styles/colors
+
+.stars
+  display: inline-flex
+  flex-direction: row
+  align-items: flex-start
+  justify-content: flex-start
+  height: fit-content
+  margin-top: 4px
+
+.out
+  position: relative
+  width: fit-content
+  height: 100%
+  z-index: 1
+  margin-right: 4px
+  color: $color-back-mid
+
+.in
+  display: block
+  position: absolute
+  z-index: 2
+  top: 0
+  left: 0
+  bottom: 0
+  overflow: hidden
+  width: 0
+  // color: $color-accent
+  color: $color-text-main
+
+.icon
+  width: 20px
+  height: 20px
