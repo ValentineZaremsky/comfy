@@ -7,7 +7,7 @@ const Cart = () => {
   return (
     <>
       <div className={css.cart}>
-        <Link to={'/cart'} className={css.link}>
+        <Link to={'/bag'} className={css.link}>
           <CartIcon className={css.icon} />
           <div className={css.bulb}>5</div>
         </Link>

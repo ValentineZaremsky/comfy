@@ -1,0 +1,167 @@
+@import ../../styles/colors
+
+.dummy
+  flex-grow: 1
+  height: 100%
+
+.tint
+  display: block
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: $color-back-tint50
+
+.bag
+  position: fixed
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: space-between
+  top: 0
+  right: 0
+  width: 444px
+  height: 100%
+  padding: 24px
+  box-sizing: border-box
+  color: $color-text-main
+  background-color: $color-back-light
+
+  & a
+    text-decoration: none
+    color: $color-text-bright
+
+.title
+  font-size: 36px
+  font-weight: 500
+  text-align: center
+  margin: 4px auto 20px auto
+  color: $color-text-dark
+
+  &::before
+    content: '/'
+    margin-right: 16px
+    color: $color-accent
+
+.list
+  flex-grow: 1
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: flex-start
+  gap: 16px
+
+.item
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  width: 100%
+  gap: 12px
+
+.leftSide,
+.rightSide
+  display: flex
+  flex-direction: row
+  align-items: center
+  gap: 12px
+
+.photo
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  flex-shrink: 0
+  overflow: hidden
+  width: 80px
+  height: 80px
+
+  img
+    object-fit: contain
+    height: 100%
+
+.info
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: center
+
+.name
+  font-size: 18px
+  font-weight: 500
+  color: $color-text-dark
+
+.price
+  font-size: 16px
+  color: $color-text-dark
+
+.quantity
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+.up, .down
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  cursor: pointer
+
+.up svg, .down svg
+  width: 16px
+  height: 16px
+  color: $color-accent
+
+.up svg
+  transform-origin: 50% 50% 0
+  transform: rotate(180deg)
+
+.counter
+  font-size: 22px
+  font-weight: 500
+  text-align: left
+  margin: 0
+  color: $color-text-main
+
+.close,
+.remove
+  width: 24px
+  height: 24px
+  cursor: pointer
+  color: $color-text-light
+
+.total
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  box-sizing: border-box
+  padding: 24px 36px 16px 36px
+  width: 100%
+  gap: 12px
+  color: $color-text-dark
+
+  & .label
+    font-size: 24px
+    font-weight: 500
+    text-align: left
+
+  & .amount
+    font-size: 28px
+    font-weight: 700
+    text-align: right
+
+.button
+  margin: 12px auto 24px
+
+  & .caption
+    display: inline-block
+    font-size: 20px
+    font-weight: 400
+    text-transform: uppercase
+    padding: 5px 72px 8px 72px
+    border-radius: 6px
+    background-color: $color-accent
+    border: 1px solid $color-text-bright
