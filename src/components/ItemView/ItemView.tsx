@@ -45,7 +45,7 @@ const ItemView = (props: ItemViewProps): JSX.Element => {
               <span className={css.label}>Price: </span>
               <span className={css.digits}>${price}</span>
             </div>
-            <Link to={'/cart'} className={css.link}>
+            <Link to={'/bag'} className={css.link}>
               <div className={css.button}>Buy now</div>
             </Link>
           </div>

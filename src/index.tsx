@@ -4,6 +4,14 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import './index.sass';
 
+let categories = [
+  { id: 0, title: 'All', slug: 'all' },
+  { id: 1, title: 'Electronics', slug: 'electronics' },
+  { id: 2, title: 'Jewelry', slug: 'jewelery' },
+  { id: 3, title: "Men's clothing", slug: "men's clothing" },
+  { id: 4, title: "Women's clothing", slug: "women's clothing" },
+];
+
 let products = [
   {
     id: 1,
@@ -97,6 +105,12 @@ let products = [
   },
 ];
 
+export interface CategoriesProps {
+  id: number;
+  title: string;
+  slug: string;
+}
+
 export interface ProductProps {
   id: number;
   title: string;
@@ -113,7 +127,7 @@ export interface ProductProps {
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App products={products} />
+      <App categories={categories} products={products} />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root'),
