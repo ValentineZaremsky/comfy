@@ -19,10 +19,11 @@ const App = ({ categories, products }: AppProps) => {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home products={products} />} />
-        <Route path="products" element={<Products categories={categories} products={products} />} />
         <Route path="products/:id" element={<ItemView products={products} />} />
+        <Route path="products" element={<Products categories={categories} products={products} />} />
         <Route path="about" element={<About />} />
         <Route path="bag" element={<Bag />} />
+        <Route path="*" element={<Home products={products} />} />
       </Routes>
       <Footer />
     </div>

@@ -1,8 +1,8 @@
 import { combineReducers, createStore } from "redux";
-import categoryReducer from './category-reducer';
+import productsReducer from './products-reducer';
 
 let reducers = combineReducers({
-  categoryBlock: categoryReducer
+  productsPage: productsReducer
 });
 
 let store = createStore(reducers);
